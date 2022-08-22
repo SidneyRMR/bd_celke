@@ -6,7 +6,7 @@ $query_produtos = "SELECT prod.id_produto, prod.desc_produto, saldo.qtd_disponiv
         FROM tb_produtos AS prod
         -- WHERE prod.id_produto = 100
         LEFT JOIN tb_saldo_est AS saldo ON saldo.id_produto=prod.id_produto
-        ORDER BY prod.id_produto DESC";
+        ORDER BY prod.id_produto ASC";
 
 $result_produtos = $conn->prepare($query_produtos);
 $result_produtos->execute();
