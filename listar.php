@@ -4,7 +4,7 @@ include_once "conexao.php";
 
 $query_produtos = "SELECT prod.id_produto, prod.desc_produto, saldo.qtd_disponivel, saldo.qtd_a_retirar,saldo.id_produto
         FROM tb_produtos AS prod
-        WHERE prod.id_produto = 100
+        -- WHERE prod.id_produto = 100
         LEFT JOIN tb_saldo_est AS saldo ON saldo.id_produto=prod.id_produto
         ORDER BY prod.id_produto DESC";
 
