@@ -13,6 +13,6 @@
 
     <span class='listar-produtos'></span>
 
-    <script src="js/custom.js"></script>
+    <script src="js/listarProdutos.js"></script>
 </body>
 </html>
